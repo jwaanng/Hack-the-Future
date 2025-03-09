@@ -7,7 +7,7 @@ from google import genai
 from google.genai import types
 from donation import generatedonation
 from api import generate
-MONGO_URI = "mongodb+srv://terenceyang19:!Terence19@cluster0.ntodz.mongodb.net/"
+MONGO_URI = "mongodb+srv://terenceyang19:HTF123123@cluster0.ntodz.mongodb.net/"
 SELLER_ID = ""  
 SELLER_ADDRESS = ""
 
@@ -41,7 +41,6 @@ if __name__ == "__main__":
     db = client["your_database_name"]
     collection = db["your_collection_name"]
     
-    SELLER_ID = "seller123"  
-    SELLER_ADDRESS = "125 st George St, Toronto, ON M5S 1A5" 
-    
+    username = input("Enter Seller ID:")
+    username = input("Enter Seller Address:")   
     add_seller(SELLER_ID, SELLER_ADDRESS)
